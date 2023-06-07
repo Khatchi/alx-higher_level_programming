@@ -3,6 +3,7 @@ def magic_calculation(a, b, c):
     """Match the bytecode provided by ALX."""
     if a < b:
         return c
-    if c > b:
-        return (a + b)
-    return (a ** b - c)
+    elif c > b:
+        return a + b
+    else:
+        return (a * b) - c
