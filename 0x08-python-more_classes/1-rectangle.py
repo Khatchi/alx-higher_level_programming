@@ -1,27 +1,38 @@
+#!/usr/bin/python3
+"""
+Defines the Rectangle class
+of width and height.
+"""
+
+
 class Rectangle:
     """
-    Represents a rectangle.
+    A class of type Rectangle with private instance variables
+    width and height.
+    Test 1
+    >>> print(Rectangle(2, 4).__dict__)
+    {'_Rectangle__width': 2, '_Rectangle__height': 4}
+
     """
-
     def __init__(self, width=0, height=0):
-        """Initialize a new Rectangle.
-
-        Args:
-            width (int): The width of the new rectangle.
-            height (int): The height of the new rectangle.
         """
-        self.width = width
+        A constructor for the Rectangle class that
+        initializes the width and height fields.
+        """
         self.height = height
+        self.width = width
 
     @property
     def width(self):
-        """
-        Get/set the width of the rectangle.
-        """
+        """ A getter for the width field """
         return self.__width
 
     @width.setter
     def width(self, value):
+        """
+        A setter for the width field.
+        The width must be a positive integer
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -30,13 +41,15 @@ class Rectangle:
 
     @property
     def height(self):
-        """
-        Get/set the height of the rectangle.
-        """
+        """ A getter for the height field """
         return self.__height
 
     @height.setter
     def height(self, value):
+        """
+        A setter for the height field.
+        The height must be a positive integer
+        """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
