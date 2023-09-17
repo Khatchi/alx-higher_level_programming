@@ -20,8 +20,8 @@ if __name__ == "__main__":
     Creates a cursor object to interact with the database.
     """
 
-    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY
-                   'N%' ORDER BY states.id ASC")
+    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%'
+                   ORDER BY states.id ASC")
     """Executes MySQL querry."""
 
     rows = cursor.fetchall()
