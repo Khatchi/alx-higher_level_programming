@@ -4,7 +4,7 @@ This module lists all the states with a name starting
 with N(upper N) in the database hbtn_0e_0_usa.
 """
 
-import MySQLdb
+import MySQLdb as db
 from sys import argv
 
 if __name__ == "__main__":
