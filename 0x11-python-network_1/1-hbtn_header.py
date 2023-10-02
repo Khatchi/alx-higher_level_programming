@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This script displays the X-Request-Id header variable of a request to a given URL.
+This script displays the X-Request-Id header variable 
+of a request to a given URL using sys and urllib.
 Usage: ./1-hbtn_header.py <URL>
 """
 import sys
